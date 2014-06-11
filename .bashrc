@@ -25,6 +25,11 @@ alias cdmachines="cd /software/dist/types"
 if [ -f /etc/bashrc ]; then
 		. /etc/bashrc
 fi
+# Bash completion
+if [ -f /etc/bash_completion.d/git ]; then
+. /etc/bash_completion.d/git
+fi
+export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 
 export WUI_BUILD_ROOT=/code
 
