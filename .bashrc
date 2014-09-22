@@ -35,7 +35,7 @@ export WUI_BUILD_ROOT=/code
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:/usr/local/openresty/nginx/sbin/
 
 export PATH
 
